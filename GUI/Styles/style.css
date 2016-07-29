@@ -1,0 +1,55 @@
+#uhr{
+	font-size: 200px;
+	font-weight: bold;
+	color: red;
+	text-align: center;
+}
+
+#datum,
+.big-red-text {
+	font-size: 50px;
+	font-weight: bold;
+	color: red;
+	text-align: center;
+}
+p.big-red-text {
+	margin: 0;
+}
+
+#leiste{
+	text-align: center;	
+}
+
+
+.settings{
+	font:30px Arial,Helvetica,sans-serif;
+	font-size:30px;
+	width:200px;
+}
+
+
+body{
+	background-color: black;
+}
+
+.brightwake-form {
+	width: 500px;
+	margin: 20px auto 50px auto;
+	color: black;
+	background-color: grey;
+	border-radius: 10px;
+	padding: 20px;
+}
+.brightwake-form form {
+	text-align: center;
+}
+.brightwake-form form input {
+	margin: 5px;
+}
+.brightwake-form form select {
+	margin: 5px;
+}
+.brightwake-form form button {
+	margin: 5px;
+}
+

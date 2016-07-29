@@ -1,0 +1,50 @@
+<html>
+	<head>
+		<title>BrightWake</title>
+		<meta charset="UTF-8"> 
+		<link rel="stylesheet" href="Styles/style.css">
+		<script type="text/javascript" src="JS/jquery-3.0.0.min.js"></script>
+		<script language="JavaScript" src="JS/uhrzeit.js"></script>
+	</head>
+
+	<body onload="uhr_anzeigen(), datum_anzeigen()">
+		<div id="uhr"></div>	
+		<div id="datum"></div>	
+		<div id="leiste">
+			<br><br>
+			<button class="settings" type="button" onclick="location.href='Weckzeiteinstellungen.php'">Weckzeit</button>
+			<button class="settings" type="button" onclick="location.href='Weckmoduseinstellungen.php'">Weckmodus</button>			
+		</div>
+		<div class="brightwake-form">
+			<h1 style="text-align: center; margin-top: 0;">Demo-Modus</h1>
+			<form method="POST" action="Helper/DemoMode.php">
+				<div class="input_panel">
+					<input type="text" id="sleepmode_1" name="sleepmode_1" value="Tiefschlaf" readonly>
+					<select id="wakemode_1" name="wakemode_1">
+						<option value="1" selected>Lichtmodus</option>
+						<option value="2">Soundmodus</option>
+						<option value="3">Vibrationsmodus</option>
+					</select>
+				</div>
+				<div class="input_panel">
+					<input type="text" id="sleepmode_2" name="sleepmode_2" value="Leichtschlaf" readonly>
+					<select id="wakemode_2" name="wakemode_2">
+						<option value="1">Lichtmodus</option>
+						<option value="2" selected>Soundmodus</option>
+						<option value="3">Vibrationsmodus</option>
+					</select>
+				</div>
+				<div class="input_panel">
+					<input type="text" id="sleepmode_3" name="sleepmode_3" value="Normalschlaf" readonly>
+					<select id="wakemode_3" name="wakemode_3">
+						<option value="1">Lichtmodus</option>
+						<option value="2">Soundmodus</option>
+						<option value="3" selected>Vibrationsmodus</option>
+					</select>
+				</div>
+				<button value="submit" class="settings">Demo-Modus starten</button>
+			</form>
+		</div>
+	</body>
+</html>
+
